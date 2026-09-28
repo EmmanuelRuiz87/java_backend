@@ -14,9 +14,11 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
+	@GetMapping("/triangle")
+	public String lados(@RequestParam(value = "base", defaultValue = "0") int base,
+						@RequestParam(value = "height", defaultValue = "0") int height) {
+		double area = (base * height) / 2;
+		int perimeter = base*3;
+		return String.format("Base: %d,  Altura: %d,  Área: %.2f,  Perímetro(equilatero): %d", base, height, area, perimeter);
 	}
-
 }
