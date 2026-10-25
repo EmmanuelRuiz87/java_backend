@@ -10,6 +10,6 @@ public class Circle {
     public String circle(@RequestParam(value = "radio", defaultValue = "0") int radio) {
         double area = 3.14 * radio * radio;
         double perimeter = 2 * 3.14 * radio;
-        return String.format("Radio = %d<br>Área = %f<br>Perímetro = %f", radio, area, perimeter);
+        return String.format("<h1>Circulo</h1>Radio = %d<br>Área = %f<br>Perímetro = %f", radio, area, perimeter);
     }
 }
