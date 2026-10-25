@@ -14,7 +14,7 @@ public class Triangle {
         int perimeter = base * 3;
 
         return String.format(
-                "Base: %d,  Altura: %d,  Área: %.2f,  Perímetro(equilatero): %d",
+                "Base: %d<br>Altura: %d<br>Área: %.2f<br>Perímetro (equilatero): %d",
                 base, height, area, perimeter);
     }
 
